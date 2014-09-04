@@ -28,7 +28,7 @@ gulp.task('clean', function () {
     }).pipe(clean());
 });
 
-gulp.task('build', ['lint'], function () {
+gulp.task('build', ['lint','clean'], function () {
     return gulp.src('./lib/html-parser.js')
         .pipe(modulex({
             modulex: {

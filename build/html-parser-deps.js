@@ -1,1 +1,0 @@
-modulex.config("requires",{"html-parser":["base"]});
