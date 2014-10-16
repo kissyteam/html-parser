@@ -1,7 +1,7 @@
 /*
-Copyright 2014, modulex-html-parser@1.0.1
+Copyright 2014, modulex-html-parser@1.0.2
 MIT Licensed
-build time: Thu, 16 Oct 2014 03:23:12 GMT
+build time: Thu, 16 Oct 2014 03:56:54 GMT
 */
 modulex.add("html-parser", [], function(require, exports, module) {
 
@@ -2556,7 +2556,7 @@ htmlParser = function (exports) {
   var Tag = htmlParserNodesTag;
   var Text = htmlParserNodesText;
   exports = {
-    version: '1.0.1',
+    version: '1.0.2',
     Utils: htmlParserUtil,
     CData: CData,
     Comment: Comment,

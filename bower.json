@@ -7,7 +7,7 @@
         "url": "http://github.com/kissyteam/html-parser.git"
     },
     "dependencies": {
-        "modulex": "modulex#master"
+        "modulex": "*"
     },
     "ignore": [
         "tests/**/*",
