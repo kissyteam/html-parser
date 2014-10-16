@@ -20,6 +20,12 @@ var header = ['/*',
         packageInfo.license + ' Licensed',
         'build time: ' + (date.toGMTString()),
     '*/', ''].join('\n');
+
+gulp.task('tag',function(done){
+    var cp = require('child_process');
+    var version = packageInfo.version;
+    cp.exec('git tag '+version +' | git push origin '+version+':'+version+' | git push origin master:master',done);
+});
     
 gulp.task('lint', function () {
     return gulp.src('./lib/**/*.js')
